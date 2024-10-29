@@ -36,6 +36,7 @@ body{
     height: 100px;
     border: 1px solid #ccc ;
     border-radius: 5px;
+    padding: 5px;
 }
 #translator-form button{
     padding: 10px;
@@ -50,4 +51,10 @@ body{
 }
 #translator-form button:hover{
  background-color: #12af12;
+}
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
 }
