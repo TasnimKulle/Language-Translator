@@ -1382,7 +1382,7 @@ function displayLang() {
   toLang.innerHTML = '<option value="" disabled selected>Select a language</option>';
   // Populate the fromLang dropdown
   for (const code in translation) {
-    if (translations.hasOwnProperty(code)) {
+    if (translation.hasOwnProperty(code)) {
       const option = document.createElement('option');
       option.value = code;
       option.textContent = translations[code].name;
@@ -1393,7 +1393,7 @@ function displayLang() {
 
   // Populate the toLang dropdown
   for (const code in translation) {
-    if (translations.hasOwnProperty(code)) {
+    if (translation.hasOwnProperty(code)) {
       const option = document.createElement('option');
       option.value = code;
       option.textContent = translations[code].name;
@@ -1402,3 +1402,4 @@ function displayLang() {
   }
 
 }
+displayLang({});
